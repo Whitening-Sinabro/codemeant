@@ -33,6 +33,11 @@ jobs:
       - name: Build with OpenNext
         working-directory: apps/web
         run: npx @opennextjs/cloudflare build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          NEXT_PUBLIC_API_URL: https://api.codemeant.dev
+          NEXT_PUBLIC_SITE_URL: https://codemeant.dev
 
       - name: Deploy to Cloudflare
         working-directory: apps/web
