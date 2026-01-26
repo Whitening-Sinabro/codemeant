@@ -34,7 +34,8 @@
       "Bash(npx @railway/cli login --browserless)",
       "Bash(pnpm remove:*)",
       "Bash(npx @opennextjs/cloudflare build:*)",
-      "Bash(npx create-cloudflare@latest:*)"
+      "Bash(npx create-cloudflare@latest:*)",
+      "Bash(git push:*)"
     ]
   }
 }
