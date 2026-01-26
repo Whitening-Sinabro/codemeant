@@ -1,0 +1,16 @@
+name = "codemeant-web"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# Custom domain
+[[routes]]
+pattern = "codemeant.dev"
+custom_domain = true
+
+[[routes]]
+pattern = "www.codemeant.dev"
+custom_domain = true
+
+# Environment variables (set via Cloudflare dashboard or wrangler secret)
+# NEXT_PUBLIC_SUPABASE_URL
+# NEXT_PUBLIC_SUPABASE_ANON_KEY
