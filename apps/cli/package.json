@@ -1,0 +1,43 @@
+{
+  "name": "codemeant",
+  "version": "0.1.0",
+  "description": "CodeMeant CLI - 프로젝트 가치 분석 도구",
+  "type": "module",
+  "bin": {
+    "codemeant": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsup src/index.ts --format esm --dts",
+    "start": "node dist/index.js",
+    "lint": "eslint src/",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "conf": "^13.0.1",
+    "ignore": "^6.0.2",
+    "open": "^10.1.0",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "@codemeant/shared-types": "workspace:*",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "codemeant",
+    "project-analysis",
+    "vibe-coding"
+  ],
+  "author": "",
+  "license": "MIT"
+}

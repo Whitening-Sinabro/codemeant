@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__clouvel__start",
+      "mcp__clouvel__save_prd",
+      "mcp__clouvel__init_docs",
+      "mcp__clouvel__can_code",
+      "mcp__clouvel__get_prd_guide",
+      "mcp__clouvel__list_templates",
+      "mcp__clouvel__get_prd_template",
+      "mcp__clouvel__manager",
+      "mcp__clouvel__quick_perspectives",
+      "Bash(dir:*)",
+      "WebSearch",
+      "Bash(pnpm install)",
+      "Bash(pnpm build:*)",
+      "Bash(pnpm --filter @codemeant/web dev:*)",
+      "Bash(pip install:*)",
+      "Bash(python -m pip install:*)",
+      "Bash(where:*)",
+      "Bash(pnpm --filter codemeant build:*)",
+      "Bash(py:*)",
+      "Bash(pnpm --filter codemeant start -- login)",
+      "Bash(set:*)",
+      "Bash(curl:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

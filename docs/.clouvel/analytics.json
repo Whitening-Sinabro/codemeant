@@ -1,0 +1,35 @@
+{
+  "events": [
+    {
+      "tool": "can_code",
+      "ts": "2026-01-25T23:07:59.184037",
+      "success": true
+    },
+    {
+      "tool": "can_code",
+      "ts": "2026-01-25T23:08:26.870173",
+      "success": true
+    },
+    {
+      "tool": "can_code",
+      "ts": "2026-01-25T23:08:38.252637",
+      "success": true
+    },
+    {
+      "tool": "can_code",
+      "ts": "2026-01-25T23:20:41.994380",
+      "success": true
+    },
+    {
+      "tool": "can_code",
+      "ts": "2026-01-25T23:20:52.322138",
+      "success": true
+    },
+    {
+      "tool": "can_code",
+      "ts": "2026-01-25T23:21:11.932631",
+      "success": true
+    }
+  ],
+  "version": "1.0"
+}
