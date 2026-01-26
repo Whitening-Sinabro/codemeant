@@ -30,7 +30,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build and Deploy with OpenNext
+      - name: Build with OpenNext
+        working-directory: apps/web
+        run: npx @opennextjs/cloudflare build
+
+      - name: Deploy to Cloudflare
         working-directory: apps/web
         run: npx @opennextjs/cloudflare deploy
         env:
