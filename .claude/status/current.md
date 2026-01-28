@@ -26,11 +26,39 @@
 - [x] Go/No-Go 기준 정의
 - [x] PRD v2.0 작성 완료
 
+### 시장 검증 인프라 (2026-01-29)
+- [x] Google Forms 설문 생성 (14개 질문)
+- [x] 설문 링크 랜딩페이지 연결
+- [x] 웨이트리스트 테이블 생성 (002_waitlist.sql)
+- [x] 웨이트리스트 API 구현 (/api/v1/waitlist/join)
+- [x] 프론트엔드 API 연동
+- [x] Cloudflare 배포 완료
+- [x] Hero badge 업데이트: "Now in Beta · Shipping daily"
+
 ## 다음 할 일
-1. **설문 링크 생성**: Google Forms로 설문 만들기
-2. **웨이트리스트 API**: Supabase에 이메일 저장
-3. **랜딩페이지 배포**: Cloudflare에 배포
-4. **커뮤니티 공유**: Reddit, HN, 긱뉴스
+1. **커뮤니티 공유**: Reddit, HN, 긱뉴스
+2. **Railway 토큰 갱신**: GitHub Secrets 업데이트 필요
+3. **PRD 상세화**: User Stories, API 스펙, AI 프롬프트 추가
+
+## 배포 현황
+| 서비스 | URL | 상태 |
+|--------|-----|------|
+| 랜딩페이지 | https://codemeant.dev | ✅ 배포됨 |
+| API | https://api-production-82c0.up.railway.app | ⚠️ 토큰 만료 |
+| 설문 | https://docs.google.com/forms/d/e/1FAIpQLSfwlCPu81NTbqboGIa-XCj05MvxBxvUQW91EixMnuaKEKrRLw/viewform | ✅ 활성화 |
+
+## 생성된 파일 (2026-01-29)
+| 파일 | 설명 |
+|------|------|
+| `supabase/migrations/002_waitlist.sql` | 웨이트리스트 테이블 |
+| `apps/api/app/routers/waitlist.py` | 웨이트리스트 API |
+| `docs/SURVEY.md` | 설문 질문 목록 |
+| `docs/PRD.md` | PRD v2.0 (Ship + Onboard + Mentor) |
+
+## 메모
+- Railway 토큰 만료됨 → GitHub Secrets에서 RAILWAY_TOKEN 갱신 필요
+- 웨이트리스트 API는 Railway 재배포 후 동작
+- Next.js 버전 경고 → `--dangerouslyUseUnsupportedNextVersion` 플래그로 해결
 
 ## 생성/수정된 파일 (2026-01-26)
 
