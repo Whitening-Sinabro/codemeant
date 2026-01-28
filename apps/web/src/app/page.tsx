@@ -40,7 +40,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="hero">
-        <div className="hero-badge">Now in Beta</div>
+        <div className="hero-badge">Now in Beta · Shipping daily</div>
         <h1>3-month onboarding,<br />done in 3 weeks.</h1>
         <p className="subtitle">
           Stop answering the same questions over and over.
