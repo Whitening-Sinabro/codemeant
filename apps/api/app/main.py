@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routers import auth, credits, analysis, webhooks
+from app.routers import auth, credits, analysis, webhooks, waitlist
 
 app = FastAPI(
     title="CodeMeant API",
@@ -11,7 +11,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://codemeant.dev"],
+    allow_origins=["http://localhost:3000", "http://localhost:4001", "https://codemeant.dev"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -21,6 +21,7 @@ app.include_router(auth.router, prefix="/api/v1/auth", tags=["auth"])
 app.include_router(credits.router, prefix="/api/v1/credits", tags=["credits"])
 app.include_router(analysis.router, prefix="/api/v1/analysis", tags=["analysis"])
 app.include_router(webhooks.router, prefix="/api/v1/webhooks", tags=["webhooks"])
+app.include_router(waitlist.router, prefix="/api/v1/waitlist", tags=["waitlist"])
 
 
 @app.get("/health")

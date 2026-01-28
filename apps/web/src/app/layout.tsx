@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
+import { Space_Grotesk } from "next/font/google";
+import "./globals.css";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-space",
+});
 
 export const metadata: Metadata = {
-  title: "CodeMeant - 프로젝트 가치 분석",
-  description: "바이브코더를 위한 프로젝트 가치 분석 도구",
+  title: "CodeMeant - Ship, Onboard, Mentor for Dev Teams",
+  description: "3-month onboarding done in 3 weeks. AI-powered tools for team productivity.",
 };
 
 export default function RootLayout({
@@ -11,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko">
+    <html lang="en" className={spaceGrotesk.variable}>
       <body>{children}</body>
     </html>
   );
