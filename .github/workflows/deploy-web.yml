@@ -32,7 +32,7 @@ jobs:
 
       - name: Build with OpenNext
         working-directory: apps/web
-        run: npx @opennextjs/cloudflare build
+        run: npx @opennextjs/cloudflare build --dangerouslyUseUnsupportedNextVersion
         env:
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
