@@ -223,6 +223,8 @@ export default function Home() {
         <p>&copy; 2026 CodeMeant. All rights reserved.</p>
         <p className="footer-links">
           <a href="mailto:hello@codemeant.dev">Contact</a>
+          {" · "}
+          <a href="https://www.upwork.com/freelancers/~015b3ed55c51eb34c5" target="_blank" rel="noopener noreferrer">Hire me on Upwork</a>
         </p>
       </footer>
     </>
